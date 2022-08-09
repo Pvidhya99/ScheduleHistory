@@ -1,0 +1,175 @@
+// 
+// 
+// user.scss
+//
+// Place your own theme CSS or SCSS rules below this line, these rules will override any Bootstrap and theme variables.
+
+body    {overflow-y:scroll;}
+
+.checkout-name{
+    min-width: 200px;
+    @include media-breakpoint-up(md) {
+        min-width: 400px;
+      }
+}
+.checkout-amount{
+    min-width: 200px;
+    text-align: end;
+    
+}
+.checkout-input{
+
+    @include media-breakpoint-up(md) {
+        display: flex;
+        justify-content: flex-end;
+      }
+}
+.checkout-inputGroup{
+    @include media-breakpoint-up(md) {
+      width: 70%;
+      }
+}
+
+    .nav-tabs {
+        border-bottom: 2px solid #d8e2ef;
+      
+        .nav-link {
+          margin-bottom: -2px;
+          border: var(--#{$variable-prefix}border-color);
+          color: var(--#{$variable-prefix}800);
+          font-weight: 600;
+          font-size: $font-size-sm;
+          @include border-top-radius($nav-tabs-border-radius);
+      
+          &:hover,
+          &:focus {
+            border: 1px solid transparent;
+          }
+      
+          &.disabled {
+            color: var(--#{$variable-prefix}400);
+            background-color: transparent;
+            border-color: transparent;
+          }
+        }
+      
+        .nav-item{
+          .nav-link{
+            font-family:$font-family-base;
+            background: none;
+          }
+        }
+      
+        .nav-link.active,
+        .nav-item.show .nav-link {
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #2c7be5;
+            color: #2c7be5;
+            font-weight: 600;
+      
+        }
+      }
+      
+      .nav-pills-falcon {
+        background-color: #f9fafd;
+        border-radius: 0.25rem !important;
+        border: 1px solid #cccfd5;
+        .nav-link {
+            padding: $btn-padding-y-sm $btn-padding-x-sm;
+            background: none;
+            border: 0px solid transparent;
+            color: #808080d9;
+        }
+      
+        .btn {
+          box-shadow: none;
+          outline: 0;
+          color: var(--#{$variable-prefix}600);
+      
+          &.active {
+            background-color: var(--#{$variable-prefix}nav-pills-falcon-active-bg-color) !important;
+            box-shadow: var(--#{$variable-prefix}btn-falcon-box-shadow) !important;
+            color: #ea7066  !important;
+            background: none !important;
+            border: 0px !important;
+            box-shadow: #ea7066 0px 0px 0px 1px, #ea7066 0px 2px 5px 0px, #ea7066 0px 1px 1.5px 0px, #ea7066 0px 1px 2px 0px !important
+          }
+      
+          &:active:focus {
+            box-shadow: none;
+          }
+      
+          @include hover-focus {
+            color: none
+          }
+        }
+      }
+      
+      .event-active{
+        background-color: #b2e87a;
+        margin: 5px -7px;
+        padding: 2px 5px;
+        border-radius:  10px;
+        cursor: pointer;
+      }
+      .event-active:hover{
+        background-color: #ffa500f5;
+       
+        color: white;
+      }
+      .event-holiday{
+        color: #7d1b7a;
+        background-color: transparent;
+        font-style: italic;
+        font-size: inherit;
+        padding: 50px;
+        cursor: not-allowed;
+      }
+      .event-disabled{
+        pointer-events: none;
+        text-decoration: none;
+        background-color: #e9efe3;
+        cursor: not-allowed;
+        margin: 5px -7px;
+        padding: 2px 5px;
+        border-radius:  10px;
+      }
+      .event-selected{
+        background-color: #ffa500f5;
+        cursor: pointer;
+        color: white;
+      }
+      .event-general{
+        pointer-events: none;
+        text-decoration: none;
+        cursor: not-allowed;
+        margin: -8px -7px;
+        padding: 0px 5px;
+       
+      }
+.custm-popover .popover{
+  max-width: 350px;
+  box-shadow: #808080a6 5px 10px 12px, #c5b9b991 -8px -4px 12px;
+}
+.fixed-col{
+  position: fixed;
+  left: 66%;
+}
+.cust-btn-primary{
+  background-color :#ea7066 !important;
+  color:white  !important
+}
+.cust-btn-third{
+  background-color :#b2e87a !important;
+  color:white  !important
+}
+.cust-btn-fourth{
+  background-color: #84bed6 !important ;
+  color:white  !important
+}
+.order-summary-boxStyle{
+  border: 2px solid rgb(180, 228, 239);
+  background: #d9edf7;
+  color: #31708f;
+}

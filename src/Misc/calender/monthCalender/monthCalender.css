@@ -1,0 +1,133 @@
+
+td{
+  height: 150px;
+  width: 150px;
+  min-width: 150px;
+}
+.tblHead{
+    text-align:center
+  }
+  .tblHead th {
+    font-weight: bold;
+  }
+  /*tr:nth-child(odd) { 
+     background-color: rgba(245, 239, 239, 0.932);  
+} */
+  .tblBodyCol{
+    height: 150px;
+    max-width: 140px;
+  }
+  .tblBodyColDate{
+    display:'block';
+    text-align:right;
+  }
+  .tblBodyColDate .today{
+    padding: 3px 10px;
+    background-color: #2c7be5;
+    border-radius: 50%;
+    color: #fff;
+    padding-top: 0px;
+  }
+  .tblBodyColDate .notToday{
+    padding: 4px;
+    border-radius: 20px;
+    color: rgba(44, 4, 4, 0.938);
+  }  
+  .title{
+      line-height:20px;
+      font-size: 12px;
+      display: block;
+      margin-bottom: 5px;
+      padding:3px;
+      color:#fff;
+      border-radius: 3px;
+  }
+  .groupTitle{
+    text-align: left;
+  }
+  .menuItemDivision{
+    margin: 2px;
+    border-color: #b5d56a;
+  }
+  .menuItem{
+    text-align: left;
+    line-height: 20px;
+    font-size: 12px;
+    display: block;
+    margin-bottom: 5px;
+    padding: 3px;
+    color: #000;
+    border-radius: 3px;
+    background-color: rgb(178 232 122);
+    cursor: pointer;    
+  }
+  .menuItem.noSelect{
+    background-color: #fdfafa;
+    pointer-events: none;
+    text-decoration: none;
+    cursor:not-allowed;
+  }
+  .menuItem.noSchool{
+    color: #7d1b7a;
+    background-color: transparent;
+    font-style: italic;
+    font-size: inherit;
+    cursor:not-allowed;
+  }
+  .menuItem.border{
+    background-color: transparent;
+    border: solid 1px #f47e35;
+  }
+  .menuItem.noAction{
+    pointer-events: none;
+    text-decoration: none;
+  }
+  .menuItem.disabled{
+    background-color:#e9efe3;
+    pointer-events: none;
+    text-decoration: none;
+    cursor:not-allowed;
+  }
+  .menuItem a{
+    color: inherit;
+  }
+  .menuItem a:hover{
+    color: inherit;
+  }
+
+  .menuItem.active{
+    background-color:orange;
+    cursor: pointer;
+  }
+  .menuItem.active.disabled{
+    background-color:#ecd5a9;
+    pointer-events: none;
+    text-decoration: none;
+    cursor:not-allowed;
+  }
+
+  .menuItem .tooltiptext {
+    /* visibility: hidden; */
+    display: none;
+    max-width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 10000000;
+    margin-left: -60px;
+  }  
+  .menuItem:hover .tooltiptext {
+    /* visibility: visible; */
+    display: block;
+  }
+  .calender-header{
+    height: 60px;
+  }
+  .calender-btn{
+    font-size: 1.75em;
+  }

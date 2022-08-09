@@ -1,0 +1,79 @@
+.rtable > tbody > tr > th,
+.rtable > tfoot > tr > th,
+.rtable > thead > tr > td,
+.rtable > tbody > tr > td,
+.rtable > tfoot > tr > td {
+  padding: 5px 9px;
+  font-size: 14px;
+}
+
+.rtable > thead > tr.theader {
+  background-color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.rtable > thead > tr > th {
+  background-color: #ea7066;
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 10px;
+  white-space: nowrap;
+}
+
+.rtable > thead > tr > th.tfilter {
+  padding: 2px 5px;
+  font-weight: 400;
+}
+
+.rtable > thead > tr > th.tfilter > div > label.divFilter {
+  font-size: 10px;
+}
+
+.div-pagination {
+  font-size: 12px;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #edf2f9;
+}
+
+.pagina {
+  color: #212529;
+}
+
+.table-search-switch > label {
+  font-size: 12px;
+  padding: 4px 2px;
+}
+
+.pagina .pagination {
+  margin-bottom: 3px;
+}
+
+.div-pagination .inputan {
+  width: 75px;
+  text-align: center;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  color: #212529;
+  line-height: 2.4;
+  margin: 0px 5px;
+}
+
+.div-pagination .inputan:focus {
+  border: 1px solid #dee2e6;
+}
+
+.div-pagination .selectan {
+  width: 75px;
+  text-align: center;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  color: #212529;
+  line-height: 2.4;
+  height: 32.5px;
+}
+
+.div-pagination .inputan:focus {
+  border: 1px solid #dee2e6;
+}

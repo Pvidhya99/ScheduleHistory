@@ -1,0 +1,85 @@
+.tblHead{
+    text-align: center
+  }
+  .tblHead th {
+    font-weight: bold;
+  }
+  .tblBodyCol{
+    height: 150px;
+    max-width: 140px;
+  }
+  .tblBodyColDate{
+    display:'block';
+    text-align:right;
+  }
+  .tblBodyColDate .today{
+    padding: 1px 7px;
+    background-color: #2c7be5;
+    border-radius: 50%;
+    color: #fff;
+    padding-top: 0px;
+  }
+  .tblBodyColDate .notToday{
+    padding: 4px;
+    border-radius: 20px;
+    color: rgba(44, 4, 4, 0.938);
+  }  
+  .title{
+      line-height:20px;
+      font-size: 12px;
+      display: block;
+      margin-bottom: 5px;
+      padding:3px;
+      color:#fff;
+      border-radius: 3px;
+  }
+  .emptyCell{
+    color:#000
+  }
+  .delete, .edit, .new {
+      display: none;
+      cursor: pointer;
+  }
+  .title:hover .delete, .title:hover .edit, .tblBodyCol:hover .new{
+     display:inline-block;
+     color:#fff;
+     line-height:20px;
+     margin: auto 5px;
+  }
+  .sides{
+    color: rgb(234, 112, 102);
+      text-align: center;
+      font-weight: bold;
+  }
+  .menuItemDivision{
+    margin: 2px;
+    border-color: #b5d56a;
+  }
+  .menuItem{
+    line-height: 20px;
+    font-size: 12px;
+    display: block;
+    margin-bottom: 5px;
+    padding: 3px;
+    color: #fff;
+    border-radius: 3px;
+    background-color:rgba(122, 136, 121, 0.97);
+    cursor: pointer;
+  }
+  .menuItem.disabled{
+    background-color:rgba(206, 210, 206,  0.97);
+  }
+
+  .menuItem.active{
+    background-color:rgba(122, 110, 121, 0.97);
+    cursor: pointer;
+  }
+  .menuItem.active.disabled{
+    background-color:rgba(219, 199, 219, 0.97);
+  }
+  .calender-header{
+    height: 60px;
+  }
+  .calender-btn{
+    font-size: 1.75em;
+  }
