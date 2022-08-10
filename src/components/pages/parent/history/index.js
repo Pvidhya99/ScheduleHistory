@@ -2,7 +2,7 @@ import React, {  useState, useEffect, useContext,useRef } from 'react';
 import { Card, CardBody, Col,  DropdownItem, DropdownMenu, DropdownToggle, Row } from 'reactstrap';
 import { enumDateFilterOptions, numberFormatter, paymentType} from '../../../../helpers/utils';
 import MDropdown from '../../../m-dropdown';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {FontAwesomeIcon }from '@fortawesome/react-fontawesome';
 import RTable from '../../../table';
 import ReportDateFilters, {calculateDateRange} from'../../../reportDateFilters';
 import { hideMenuTypeTabs, hideSchoolDrowdown, showMenuTypeTabs } from '../../../actions/menuTypeAction';
@@ -10,7 +10,7 @@ import {getDepositFile, getDepositReportData} from '../../../actions/reportsActi
 import {useMenuTypeDispatch, useMenuTypeState} from './../../../../context/MenuTypeContext';
 import moment from 'moment-timezone';
 import "flatpickr/dist/themes/material_green.css";
-import { useAuthState } from '../../../../context/Context';
+import  useAuthState  from '../../../../context/Context';
 const StudentHistory =()=>{
 const dispatch=useMenuTypeDispatch();  
     const [selectedPeriod, setSelectedPeriod]=useState(enumDateFilterOptions.ThisWeek)
